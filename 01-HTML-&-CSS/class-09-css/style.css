@@ -1,0 +1,102 @@
+/* h1 {
+   text-align: center; 
+   background-color: red;
+   color: white;
+} */
+
+
+/* h1 selector haa */
+/* textalign property */
+/* center value */
+
+
+/* *{
+    color: rebeccapurple;
+}
+
+h1 {
+    background-color: red;
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+.text-brown{
+    color: brown;
+}
+
+#list {
+    background-color: antiquewhite;
+} */
+
+
+/* .parent > p {
+    background-color: red;
+} */
+
+/* .parent p {
+    background-color: red;
+} */
+
+
+/* h1+p {
+    background-color: red;
+} */
+/* h1~p {
+    background-color: red;
+} */
+
+
+/* #head-one{
+    color: orangered;
+}
+
+.heading{
+    color: olive;
+}
+
+h1 {
+    color: black !important;
+}
+
+*{
+    color: red;
+} */
+
+
+
+/* universal < h1 < class < id < inline-styling < !important */
+
+
+
+/* inheritance */
+
+
+/* Prompt engineering */
+
+
+/* 
+color
+
+font-size
+
+font-family
+
+line-height
+
+text-align 
+
+*/
+
+/* .container {
+    text-align: center;
+    color: red;
+
+    border: 1px solid black;
+}
+
+p {
+    border: inherit;
+} */
