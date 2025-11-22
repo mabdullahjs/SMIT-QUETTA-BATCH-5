@@ -1,0 +1,19 @@
+/* relative units */
+/* % rem em */
+
+/* absolute units */
+/* px vw vh */
+
+/* 
+.parent {
+    border: 1px solid black;
+    width: 50%;
+    width: 50vw;
+    height: 100vh;
+}
+
+.children {
+    border: 1px solid red;
+    width: 50%;
+    width: 60vw;
+} */
