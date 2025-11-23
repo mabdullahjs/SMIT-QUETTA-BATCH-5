@@ -17,3 +17,37 @@
     width: 50%;
     width: 60vw;
 } */
+
+
+/* px rem */
+/* 1rem = 16px */
+
+/* h1 2rem 32px*/
+/* p 1rem  16px*/
+
+html {
+    font-size: 62.5%; 
+    /* 100% === 16 */
+}
+
+h1 {
+    font-size: 4rem;
+}
+p {
+    font-size: 2rem;
+}
+
+/* figma design 25px 12px 46px
+1 rem 10px 
+
+
+*{ margin 0 padding 0 box border} likhainga top maa
+html {fontsize 62.5%} iska matlb 10px
+font size ka undar hamesha rem ka istemaal krta hain
+
+
+fontsize rem
+padding margin border px
+container width %
+
+*/
