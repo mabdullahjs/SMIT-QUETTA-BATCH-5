@@ -1,0 +1,91 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.parent {
+    border: 1px solid black;
+    margin: 20px;
+    min-width: 250px;
+    max-width: 550px;
+}
+
+.parent-two{
+    border: 1px solid red;
+    margin: 20px;
+    width: 500px;
+}
+
+p {
+    border: 2px solid black;
+    height: 60px;
+    overflow: scroll;
+} */
+
+
+/* Display
+inline
+block
+inline-block
+none
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+h1 {
+    display: inline;
+    /* display: none; */
+    /* visibility: hidden; */
+    margin: 100px;
+    width: 1500px;
+    height: 500px;
+}
+
+/* inline elements pa top or bottom ma margin or padding work nahi krti 
+width or height bhi kaam nah krti 
+*/
+
+li {
+    display: inline;
+}
+
+a {
+    display: block;
+}
+
+/* img hamara inline-block
+
+inline block dikhta inline ki tarah ha liken iska under block element wali super powers hot hain
+*/
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+
+
+/* 
+css box model
+width height min-width max-width
+border, borderwidth,height style (short hand)
+display properties
+centering elemnt (text align center , margin 0 auto)
+
+
+*/
