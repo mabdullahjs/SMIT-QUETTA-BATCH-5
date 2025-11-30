@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 300px;
+    height: 300vh;
+    border: 1px solid black;
+    margin: 0px auto;
+    margin-bottom: 1000px;
+}
+
+.children {
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid red; */
+}
+
+/* postions
+
+static
+sticky
+relative
+absolute
+fixed
+
+
+*/
+
+/* top left bottom right */
+
+/* position relative hamesha parent k ird grd kaam krta ha */
+
+#red{
+    background-color: red;
+    position: relative;
+    top: 50px;
+    right: 40px;
+    z-index: 2;
+}
+#green{
+    background-color: green;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+#blue{
+    background-color: blue;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+#purple {
+    background-color: purple;
+    position: sticky;
+    top: 400px;
+}
