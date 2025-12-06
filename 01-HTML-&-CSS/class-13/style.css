@@ -59,3 +59,16 @@ fixed
     position: sticky;
     top: 400px;
 }
+
+
+/* 
+css box model
+width height min-width max-width
+border, borderwidth,height style (short hand)
+display properties
+centering elemnt (text align center , margin 0 auto)
+positions (relative , absolute, fixed, sticky)
+unit (px, %, rem, em, vw, vh)
+List table and form chapter
+
+ */
