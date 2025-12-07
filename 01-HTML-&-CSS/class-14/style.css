@@ -1,0 +1,88 @@
+.parent {
+    border: 5px solid red;
+    padding: 10px;
+    margin: 20px;
+    height: 80vh;
+
+    /* display: flex;
+    flex-direction: row-reverse; */
+
+    /* display: flex;
+    gap: 20px;
+    row-gap: 20px;
+    column-gap: 10px;
+    flex-wrap: wrap; */
+
+
+    /* display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+
+
+    /* display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: end; */
+/* 
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* display: flex;
+    flex-flow: row wrap; */
+
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+/* 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center; */
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.children {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: rgb(181, 181, 181);
+}
+
+/* #box-1{
+    order: 1;
+}
+#box-2{
+    order: 2;
+} */
+
+
+/* 
+#box-1{
+    flex-grow: 1;
+}
+#box-2{
+    flex-grow: 5;
+}
+#box-3{
+    flex-grow: 1;
+}
+#box-4{
+    flex-grow: 8;
+    flex-shrink: 5;
+} */
+
+
+#box-2{
+    flex-basis: 500px;
+    align-self: center;
+}
