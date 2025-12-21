@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: flame-bold;
+    src: url("../assets/fonts/fonnts.com-FlameBold.otf");
+}
+@font-face {
+    font-family: logo;
+    src: url("../assets/fonts/Insaniburger\ Regular.ttf");
+}
+
+body {
+    background-color: #f8f1e7;
+    color: #502314;
+    font-family: flame-bold;
+}
+
+/* header started */
+.nav{
+    justify-content: space-evenly;
+    padding: 10px;
+    border-bottom: 1px solid #dfd8cf;
+}
+.user{
+    gap: 20px;
+}
+.main-heading{
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    font-family: logo;
+    letter-spacing: 2px;
+
+}
+.header-icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.view-cart{
+    background-color: transparent;
+    border: 1px solid #ada8a1;
+    color: #706d68;
+    font-size: 1.6rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.shopping-cart{
+    margin-right: 7px;
+}
+/* header ended */
+
+
+/* first-main-section */
+.first-main-section{
+    justify-content: center;
+    margin: 30px 0px;
+    gap: 50px;
+    padding-bottom: 200px;
+}
+.main-section-heading{
+    font-size: 7rem;
+    margin: 20px 0px;
+}
+.pickup-btn{
+    background-color: #d62300;
+    color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 85px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+.delivery-btn{
+    background-color: transparent;
+    border: 1px solid #582c1e;
+    border-radius: 40px;
+    padding: 15px 80px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 1000;
+}
+/* first-main-section */
+
+
+/* second-main-section */
+.second-main-section{
+    background-color: #eee8de;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.second-main-heading{
+    font-size: 5rem;
+}
+.store-src{
+    width: 200px;
+}
+.section-second-para{
+    font-family: logo;
+    font-size: 1.5rem;
+    font-weight: lighter;
+
+}
+.second-container-second{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 35%;
+}
+.second-container-image{
+    width: 480px;
+    position: relative;
+    bottom: 50px;
+}
+/* second-main-section */
