@@ -4,6 +4,7 @@
 // console.log("Hello Abdullah");
 
 
+
 // Data types
 
 // string "dsafsdf123!@#!@$#!" 'fsafsdf' '12'
