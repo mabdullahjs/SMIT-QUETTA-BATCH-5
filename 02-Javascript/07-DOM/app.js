@@ -101,8 +101,8 @@
 
 // let const
 
-const h1 = document.querySelector("#head-one")
-const para = document.querySelector("#para-one")
+// const h1 = document.querySelector("#head-one")
+// const para = document.querySelector("#para-one")
 // h1.innerHTML = "Changed through js"
 // console.log(h1.innerHTML);
 
@@ -110,11 +110,38 @@ const para = document.querySelector("#para-one")
 
 
 
-function changetext(){
-    console.log("text change kronga isma");
+// function changetext(){
+//     console.log("text change kronga isma");
 
-    h1.innerHTML = "Changed through js"
-    para.innerHTML = "changed through javascript. Babar azam is the best batsman in the world. Pakistan will win t20 world cup 3027. Agha jee 28 wala match chahya"
+//     h1.innerHTML = "Changed through js"
+//     para.innerHTML = "changed through javascript. Babar azam is the best batsman in the world. Pakistan will win t20 world cup 3027. Agha jee 28 wala match chahya"
     
-}
+// }
 
+
+
+
+
+// var username = "Abdullah"; // initialize banadia
+// var username = "Usman" // redeclare
+// username = "Ammar" // reassign
+
+
+// let username = "Abdullah"
+// username = "Usman"
+// let username = "abd"
+// console.log(username);
+
+
+// const username = "Abdullah"
+// username = "abd"
+// console.log(username);
+
+
+// let username;
+// console.log(username);
+// username = "Abdullah"
+// console.log(username);
+
+
+// const username
