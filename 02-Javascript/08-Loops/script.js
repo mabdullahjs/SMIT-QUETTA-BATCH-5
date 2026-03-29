@@ -14,6 +14,17 @@
 //         console.log('You are invited')
 //     }
 // }
+// let userList = document.getElementById("list");
+
+// let users = ["Ali", "Ahmed", "Raza", "javad"];
+// for (let i = 0; i < users.length; i++) {
+//   console.log(users[i]);
+//   userList.innerHTML += users[i];
+// }
+// let newUser = users.slice(1, 4);
+// console.log(newUser);
+// users.splice(1, 2 , "Abdullah");
+// console.log(users);
 
 // while loop
 
@@ -32,17 +43,11 @@
 //   i++ ;
 // } while (index < 0 );
 
-
-
 // for(let i = 1 ; i <= 10 ; i++){
 //   console.log(`2 x ${i} = ${2*i}`)
 // }
 
-
-
 // console.log("hello world");
-
-
 
 // for / while / dowhile
 
@@ -54,7 +59,7 @@
 
 // for(let i = 0; i < 10; i++){
 //   console.log("hello world from loop" , i);
-  
+
 // }
 
 // backtick
@@ -73,46 +78,51 @@
 
 // for(let i = 1; i <= 10; i++){
 //   console.log(`${num} x ${i} = ${num*i}`);
-  
+
 // }
 
-
-
-// infinite loop 
+// infinite loop
 
 // for(let i = 10; i > 1; i++)
 
-
 // nested loop
-
 
 // for(let i = 1; i <= 5; i++){
 //   console.log(`outer loop ${i}`);
 
 //   for(let j = 1; j <= 10; j++){
 //     console.log(`inner loop ${j}`);
-    
+
 //   }
-  
+
 // }
-
-
-
 
 // for(let i = 1; i <= 5000; i++){
 //   console.log(`Table of ${i}`);
 
 //   for(let j = 1; j <= 10; j++){
 //     console.log(`${i} * ${j} = ${i * j}`);
-    
+
 //   }
-  
+
 // }
-
-
-
-
 
 // console.log("console after loop");
 
 // let guests = ['Ali', 'rehman', 'shahzaib', 'Rizwan'];
+
+
+const ul = document.querySelector("ul");
+let users = ["Ali", "Ahmed", "Raza", "javad"];
+// console.log(users[0]);
+// console.log(users[1]);
+// console.log(users[2]);
+// console.log(users[3]);
+
+
+for(let i = 0; i < users.length; i++){
+    console.log(users[i]);
+    // ul.innerHTML = ul.innerHTML + `<li>${users[i]}</li>`
+    ul.innerHTML +=   `<li>${users[i]}</li>`
+    
+}
