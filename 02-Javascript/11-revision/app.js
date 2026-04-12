@@ -132,47 +132,179 @@
 // arr.splice(0 , 1 , 'SMIT' , "Abdullah")
 // console.log(arr)
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-console.log(numbers.indexOf(5))
+// console.log(numbers.indexOf(5))
 
 // console.log(numbers.reverse());
 
-let num = [3, 6, 3, 1, 8, 9];
+// let num = [3, 6, 3, 1, 8, 9];
 
 // console.log(num.sort())
 
-let copy = numbers.slice(1 , 5)
+// let copy = numbers.slice(1 , 5)
 
 // console.log(copy)
 
 // console.log(numbers.join('%'))
 
-
-let a = [1, 2,3]
-let b = [4 ,5 ,6]
+// let a = [1, 2,3]
+// let b = [4 ,5 ,6]
 
 // let c = a.concat(b)
 
 // console.log(a+b)
 
-let str1 = 'abdul'
-let str2 = 'salam'
+// let str1 = 'abdul'
+// let str2 = 'salam'
 
-console.log(22 + 22)
+// console.log(22 + 22)
 
-console.log(str1 + str2)
+// console.log(str1 + str2)
 
-console.log(a.concat(b))
+// console.log(a.concat(b))
 
 //push
 //pop
-//unshift 
+//unshift
 //shift
-//slice 
+//slice
 //splice
 //reverse
-//sort 
+//sort
 // indexof
 //concat
 //join
+
+// function add(a,b){
+//     return a + b;
+// }
+//  const result =  add(2 ,4)
+//  console.log(result);
+
+// function check(num){
+//     if(num >0){
+//         return "positive"
+//     } else{
+//         return "Negative"
+//     }
+// }
+// console.log(check(2));
+// console.log(check(-1));
+
+// function greet(){
+//      return function (){
+//         console.log("hello");
+//      }
+// }
+// const sayHello = greet();
+// sayHello();
+
+// const userName = prompt("Please enter your name!")
+
+// const name = "ABDULLAH"
+// console.log(name.length);
+
+// console.log(name.toUpperCase());
+// console.log(name.toLowerCase());
+
+// const str = "this is JS";
+// console.log(str.includes("you"));
+
+// const str = "hello";
+// console.log(str.indexOf("o"));
+
+// const str = " Hello world ";
+// console.log(str.slice(0,7));
+
+// console.log(str.replace("world" , "Boy"));
+// console.log(str.trim());
+
+// const str = "Hello js how are you";
+// console.log(str.split(""));
+
+// const firstName = "Abdullah";
+// const lastName = "Khan";
+// const age = "21";
+// console.log(firstName.concat(" " , lastName , " " , age));
+
+// const str = "hello";
+// const reversed = str.split("").reverse().join("");
+// console.log(reversed);
+
+// Loops
+
+// console.log("Hello World")
+
+// let list = document.querySelector(".list");
+
+// let cities = [
+//   "New York",
+//   "London",
+//   "Tokyo",
+//   "Paris",
+//   "Dubai",
+//   "Sydney",
+//   "Toronto",
+//   "Berlin",
+//   "Moscow",
+//   "Beijing",
+//   "Mumbai",
+//   "Istanbul",
+//   "Los Angeles",
+//   "Chicago",
+//   "Bangkok",
+//   "Singapore",
+//   "Rome",
+//   "Madrid",
+//   "Seoul",
+//   "Cape Town",
+// ];
+
+// console.log(cities[10])
+
+// for (let i = 0; i < cities.length; i++) {
+//   list.innerHTML +=  `<li>${cities[i]} </li>`;
+// }
+
+// let heading = document.querySelector('.heading')
+
+// heading.innerHTML = 'Heading one'
+
+// return in function
+
+const input = document.querySelector("#input");
+const ol = document.querySelector(".list");
+
+const allTodos = [];
+
+function renderTodo() {
+  ol.innerHTML = "";
+  for (let i = 0; i < allTodos.length; i++) {
+    ol.innerHTML += `<li>${allTodos[i]}
+        <button onclick="deleteTodo(${i})">delete</button>
+        <button onclick="editTodo(${i})">edit</button>
+        </li>`;
+  }
+}
+
+function addTodo() {
+  // console.log(input.value);
+  allTodos.push(input.value);
+  // console.log(allTodos);
+
+  renderTodo();
+}
+
+function deleteTodo(index) {
+  console.log("todo deleted ", index);
+  allTodos.splice(index, 1);
+  console.log(allTodos);
+
+  renderTodo();
+}
+
+
+function editTodo() {
+  console.log("todo edited");
+}
