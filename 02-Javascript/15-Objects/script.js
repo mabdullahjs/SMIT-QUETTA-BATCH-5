@@ -187,3 +187,11 @@ console.log(user['fullName']);
 //     console.log(element);
     
 // }
+
+let obj ={
+    name : "abdul",
+    
+    greet : function(){
+        console.log(obj.name)
+    }
+}
