@@ -136,23 +136,23 @@
 // collection of (keys / properties) and values is called object.
 
 
-const user = {
-    fullName: "Muhammad Abdullah",
-    age: 22,
-    isLoggedIn: true,
-    hobbies: ['swimming' , 'eating' , 'sleeping'],
-    manager: {
-        name: "Usman",
-        age: 32,
-    },
-    greetUser: function (){
-        // console.log("testing " , this.fullName)
-        // console.log(this);
+// const user = {
+//     fullName: "Muhammad Abdullah",
+//     age: 22,
+//     isLoggedIn: true,
+//     hobbies: ['swimming' , 'eating' , 'sleeping'],
+//     manager: {
+//         name: "Usman",
+//         age: 32,
+//     },
+//     greetUser: function (){
+//         console.log("testing " , this.fullName)
+//         console.log(this);
         
-    }
-} 
-console.log(user.fullName);
-console.log(user['fullName']);
+//     }
+// } 
+// console.log(user.fullName);
+// console.log(user['fullName']);
 
 
 // user.greetUser()
@@ -188,10 +188,7 @@ console.log(user['fullName']);
     
 // }
 
-let obj ={
-    name : "abdul",
-    
-    greet : function(){
-        console.log(obj.name)
-    }
-}
+
+// Hoisting
+
+
