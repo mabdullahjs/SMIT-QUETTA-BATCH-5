@@ -1,10 +1,12 @@
 // Hoisting
 // var username;
 
-// console.log(username); // undefined
+// const { use } = require("react");
+
+// // console.log(username); // undefined
 // var username = "Abdullah";
 
-// console.log(city); // undefined
+// // console.log(city); // undefined
 // let city = "Karachi";
 
 // let or const hoisting support nahi krta.
@@ -12,12 +14,12 @@
 // greetuser();
 
 // function greetuser(){
-//     console.log("hello world");
+//     // console.log("hello world");
 
 // }
 
 // const greetuser = () => {
-//   console.log("hello world");
+//   // console.log("hello world");
 // };
 
 //Arrow function hoisting support nahi krta.
@@ -25,12 +27,12 @@
 // arrow function
 
 // function greetuser (username){
-//     console.log( `hello ${username}`);
+//     // console.log( `hello ${username}`);
 
 //     return `hello ${username}`
 // }
 
-// console.log(greetuser('abdullah'));
+// // console.log(greetuser('abdullah'));
 
 // jaha function call kra hua haa waha return hui wi value ajayegi
 
@@ -45,7 +47,7 @@
 // )
 
 // let greetings = greetuser('abdullah')
-// console.log(greetings);
+// // console.log(greetings);
 
 // Array of object
 
@@ -64,26 +66,26 @@
 
 // users[2].city = "Larkana"
 
-// console.log(users[2])
+// // console.log(users[2])
 
 // const ol = document.querySelector("ol");
 
 // for(let i = 0; i < users.length; i++){
-//     console.log(users[i].city);
+//     // console.log(users[i].city);
 //     ol.innerHTML += `<li>${users[i].city}</li>`
 
 // }
 
 // for(let i = 0; i < users.length; i++){
 //     if(users[i].city.toLowerCase() === "karachi"){
-//         console.log(users[i]);
+//         // console.log(users[i]);
 
 //     }
 // }
 
 // for(let i = 0; i < users.length; i++){
-//     // console.log(users[i]);
-//     console.log(`${users[i].name} is ${users[i].age} years old.`);
+//     // // console.log(users[i]);
+//     // console.log(`${users[i].name} is ${users[i].age} years old.`);
 
 // }
 
@@ -93,7 +95,7 @@
 
 // }
 
-// console.log(count);
+// // console.log(count);
 
 // const names = [];
 
@@ -102,7 +104,7 @@
 
 // }
 
-// console.log(names);
+// // console.log(names);
 
 // 1. Print all user names from the array.
 // 2. Print all users’ ages.
@@ -115,25 +117,22 @@
 // 9. Print users whose age is between 18 and 25.
 // 10. Print all user details one by one using a loop.
 
-// call back and higher orderfunction
-// foreach, map, filter , reduce , find , findindex
-
 // users.forEach() // method
 // alert() // function
 
 // for(let i = 0; i < users.length; i++){
-//     console.log(users[i]);
+//     // console.log(users[i]);
 
 // }
 
 // users.forEach(function (item , index , arr) {
-//     console.log(item , index , arr)
+//     // console.log(item , index , arr)
 // });
 
 // users.forEach(()=>{})
 
 // users.forEach((item , index)=>{
-//     console.log(item , index);
+//     // console.log(item , index);
 
 // })
 
@@ -147,7 +146,7 @@ const ol = document.querySelector("ol");
 
 //     return 'hello'
 // })
-// console.log(iteration);
+// // console.log(iteration);
 
 // foreach ka function kuch bhi return nahi krta.
 
@@ -156,23 +155,23 @@ const ol = document.querySelector("ol");
 //     return item.name
 // })
 
-// console.log(iteration);
+// // console.log(iteration);
 
 // foreach or map ka farq sirf itna ha k foreach kuch return nahi krta or map return krta.
 
 // map hum use krta hain array ko modify krna ka liya or iteration chalana ka liya bhi.
 
-// console.log(users.map(item => item.name + " updated"));
+// // console.log(users.map(item => item.name + " updated"));
 
 // const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // const filteredArr = num.filter(item => {
 //     return item > 5
 // })
 
-// console.log(filteredArr);
+// // console.log(filteredArr);
 
 // const filterUsers = users.filter(item => item.age > 22)
-// console.log(filterUsers);
+// // console.log(filterUsers);
 
 // const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -187,7 +186,7 @@ const ol = document.querySelector("ol");
 // // 3 + 3
 // // 6 + 4
 
-// console.log(sum);
+// // console.log(sum);
 
 // let sum = 0
 // for(let i = 0; i < num.length; i++){
@@ -195,10 +194,132 @@ const ol = document.querySelector("ol");
 
 // }
 
-// console.log(sum);
+// // console.log(sum);
 
-// promises async await
-// api calling
+//Revision
+
+// const users = [
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 30 },
+//   { name: "Charlie", age: 22 },
+//   { name: "Diana", age: 28 },
+// ];
+
+// let nums = [1, 2, 3, 4, 5];
+
+// nums.forEach((item) =>{
+//   // console.log(item * 3)
+// })
+
+// let container = document.querySelector(".container");
+
+// let modified = users.map((item) => {
+//   return (container.innerHTML += `
+//    <div class="name">name :${item.name}</div>
+//       <div class="age">Age: ${item.age}</div>`);
+// });
+
+// // console.log(modified);
+
+// const numbers = [
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
+//   23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
+//   42, 43, 44, 45, 46, 47, 48, 49, 50,
+// ];
+// let categoris = []
+// products.map((item)=>{
+//   if(!categoris.includes(item.category)){
+//     categoris.push(item.category)
+
+//   }
+// })
+
+// // // console.log(categoris)
+
+// const cart = [
+//   {
+//     id: 1,
+//     name: "Laptop",
+//     price: 800,
+//     quantity: 4
+//   },
+//   {
+//     id: 2,
+//     name: "Headphones",
+//     price: 50,
+//     quantity: 10
+//   },
+//   {
+//     id: 3,
+//     name: "Mouse",
+//     price: 25,
+//     quantity: 15
+//   },
+//   {
+//     id: 4,
+//     name: "Keyboard",
+//     price: 45,
+//     quantity: 1
+//   },
+//   {
+//     id: 5,
+//     name: "Keyboard",
+//     price: 2000,
+//     quantity: 1
+//   }
+// ];
+
+// let sum = cart.reduce((acc , val)=>{
+// return acc + val.quantity
+// } , 0)
+
+// // console.log(sum)
+
+// let product = products.find(item => item.id == 4);
+
+// // console.log(product)
+
+
+// let product = products.findIndex(item => item.id == 56);
+
+// // console.log(product)
+
+// let greaterThanTen = numbers.filter((item)=>{
+
+//   if(item > 20){
+//     // console.log(item)
+//   }
+
+// })
+// users.forEach((item, index, arr) => {
+//   // console.log(item, index, arr);
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const products = [
   { id: 1, name: "Laptop", category: "Electronics", price: 800, stock: 10 },
@@ -293,8 +414,12 @@ const products = [
 ];
 
 const div = document.querySelector(".container");
+const checkoutBtn = document.querySelector("#checkout-btn");
 
 const categoryArr = ['all'];
+const getCartItems = JSON.parse(localStorage.getItem("cartItem"));
+console.log(getCartItems);
+const cartItems = getCartItems;
 
 const renderItem = (arr) => {
   div.innerHTML = "";
@@ -305,7 +430,7 @@ const renderItem = (arr) => {
             <p>Category: ${item.category}</p>
             <p class="price">$${item.price}</p>
             <p>Stock: ${item.stock}</p>
-            <button>add to cart</button>
+            <button onclick="addToCart(${item.id})">add to cart</button>
         </div>
     `;
   });
@@ -313,30 +438,110 @@ const renderItem = (arr) => {
 
 renderItem(products)
 
+
+// add to cart
+
+function addToCart(id){
+  // console.log(id);
+
+  const singleProduct = products.find(item => item.id === id);
+  // console.log(item);
+  if(cartItems.includes(singleProduct)){
+    console.log('item already mujood ha.');
+    const index = cartItems.findIndex(item => item.id === singleProduct.id)
+
+
+    console.log(index);
+    cartItems[index].quantity += 1
+    
+    
+  }else {
+    singleProduct.quantity = 1
+    cartItems.push(singleProduct);
+    console.log('item mujood nahi tha');
+    
+    
+    
+  }
+  
+  console.log(cartItems);
+  
+  
+}
+
+
+checkoutBtn.addEventListener('click' , ()=>{
+  localStorage.setItem('cartItem' , JSON.stringify(cartItems))
+
+  window.location = "cart.html"
+})
+
+
+// category array
 products.map((item) => {
   if (!categoryArr.includes(item.category)) {
     categoryArr.push(item.category);
   }
 });
 
+
+// rendering category array
 const btnDiv = document.querySelector(".btns");
 
 categoryArr.map((item, index) => {
   btnDiv.innerHTML += `<button onclick="changeCategory(${index})">${item}</button>`;
 });
 
+
+// render product according to the category
 function changeCategory(index) {
-  console.log(categoryArr[index]);
+  // console.log(categoryArr[index]);
   if(index === 0){
     renderItem(products)
-    return 
+    return
   }
-
 
   const filteredProduct = products.filter(
     (item) => item.category === categoryArr[index],
   );
 
-  console.log(filteredProduct);
+  // console.log(filteredProduct);
   renderItem(filteredProduct)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// call back and higher orderfunction
+// foreach, map, filter , reduce , find , findindex
+// project
+// local storage
+// event
+// promises async await
+// api calling
