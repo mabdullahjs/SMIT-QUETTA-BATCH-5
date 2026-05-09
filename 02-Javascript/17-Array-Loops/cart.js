@@ -40,14 +40,14 @@ function changeQuantity(quantity, id) {
   if (quantity === "add") {
     getCartItems[index].quantity += 1;
   } else {
-        if (getCartItems[index].quantity === 1) {
-          getCartItems.splice(index, 1);
-        } else {
-          getCartItems[index].quantity -= 1;
-        }
+    if (getCartItems[index].quantity === 1) {
+      getCartItems.splice(index, 1);
+    } else {
+      getCartItems[index].quantity -= 1;
+    }
   }
 
   console.log(getCartItems);
-  localStorage.setItem('cartItem' , JSON.stringify(getCartItems))
+  localStorage.setItem("cartItem", JSON.stringify(getCartItems));
   renderItem();
 }
